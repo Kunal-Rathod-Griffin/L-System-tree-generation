@@ -22,6 +22,8 @@ int main()
     while (!glfwWindowShouldClose(window)) {
             // cout<<"3";
         sleep(1); 
+        
+        //setting up opengl
         int display_w, display_h;
         glfwGetFramebufferSize(window, &display_w, &display_h);
         glViewport(0, 0, display_w, display_h);
@@ -35,7 +37,7 @@ int main()
         }
         
         // cout<<l.genStr;
-
+        //generating string 
         l.visualise_sequence(l.genStr);
 
         glfwSwapBuffers(window);
